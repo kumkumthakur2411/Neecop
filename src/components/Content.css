@@ -1,19 +1,19 @@
 .content{
-    height: 85vh ;   
+    height: calc(100% - 80px);
     width:100%;
     /* background-color: burlywood; */
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
     /* background: linear-gradient(#219780,#ef8923,#E3867D);  */
-    }    
+    }
+    
     .container{
     position: relative;
     width: 55vw;
     height:60vh;
     background-color: cornsilk;
-    border-radius: 1em;
+    border-radius: 30px;
     box-shadow: 0 0 30px rgba(0,0,0, .2);
     overflow: hidden;
     }
@@ -27,7 +27,7 @@
     align-items: center;
     color: #222;
     text-align: center;
-    padding: 7%;
+    padding: 40px;
     z-index: 1;
     transition: .6s ease-in-out 1.2s, visibility 0s 1s;
     }
@@ -44,26 +44,26 @@
     width: 100%;
     }
     .container h1{
-    font-size: 18px;
+    font-size: 40px;
     margin: -10px 0;
     }
     .input-box{
     position: relative;
-    margin: 15px 0;
+    margin: 30px 0;
     }
     .input-box input{
     width:100%;
-    padding: 5% 18% 5% 20% ;
+    padding: 13px 50px 13px 20px;
     background: #eee;
-    border-radius: .8em;
+    border-radius: 8px;
     border:none;
     outline: none;
-    font-size: 8px;
-    color: #3a3a3a;
+    font-size: 16px;
+    color: #333;
     font-weight: 500;
     }
     .input-box input::placeholder{
-    color:#292828;
+    color:#888;
     font-weight: 400;
     }
     .input-box i{
@@ -73,22 +73,22 @@
     transform: translateY(-50%);
     color: #888;
     }
-    .forgot{
-    margin: -15px 0 15px 0;
+    .forgot-link{
+    margin: -15px 0 15px;
     }
-    .forgot a{
-    font-size: 8px;
-    color: #014640;
+    .forgot-link a{
+    font-size: 14.5px;
+    color: #333;
     text-decoration: none;
     }
     .btn{
     display: inline-block;
-    padding:5px 12px ;
+    padding: 12px 20px;
     background: linear-gradient(45deg, red,black);
     border-radius: 40px;
-    font-size: 9px;
+    font-size: 16px;
     color: white;
-    letter-spacing: .3px;
+    letter-spacing: 1px;
     text-decoration: none;
     font-weight: 600;
     }
@@ -103,7 +103,8 @@
     .toggle-box{
         position: absolute;
         width: 100%;
-        height:100%;       
+        height:100%;
+       
     }
     .toggle-box::before{
         content: '';
@@ -113,7 +114,7 @@
         background: #E3867D ;
         left: -250%;
         z-index: 2;
-        border-radius: 5em;
+        border-radius: 150px;
         transition: 2s ease-in-out;
     }
     .container.active .toggle-box::before {
@@ -153,9 +154,10 @@
         transition-delay: 1.2s;
     }
     .toggle-panel p{
-        font-size: 10px;
         margin: 20px;
     }
+    
+    
     .err{
         font-size: 20px;
         font-weight: 600;
